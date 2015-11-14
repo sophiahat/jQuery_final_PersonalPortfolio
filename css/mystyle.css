@@ -1,0 +1,442 @@
+html *
+{
+    font-family:Tahoma, Calibri, sans-serif;
+    box-sizing: border-box;
+}
+
+a 
+{
+    text-decoration: none;
+    
+}
+h1::first-letter, 
+nav li::first-letter
+ {
+    color: Black;
+}
+
+a:link
+{
+    color:#666666;
+}
+
+a:visited
+{
+    color: Black;
+}
+
+a:hover
+{
+    color:#FFA227; 
+}
+
+a:active, a.selected
+{
+    color: #7f984d;    
+}
+
+h1, h2, h3
+{
+    color:#666666;
+}
+
+p {
+    margin:10px;
+}
+
+address p
+{
+    color:#666666;
+    margin:0px;
+    padding:0px;
+
+}
+
+address strong
+{
+    color:#0E0F0E;
+}
+        
+table
+{
+    empty-cells: show;    
+}
+
+.resume-heading
+{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 800;
+    width:50px;  
+}
+
+.resume-subheading
+{
+    font-style:italic;
+    width:100px;
+}
+
+.resume-date
+{
+    float:right; 
+    font-style:italic;
+}
+
+hr
+{
+    width:80%;
+    background-color:rgba(204, 204, 204, .4);
+    height: 4px;
+}
+
+p
+{
+    color:#0E0F0E;
+}
+
+h1
+{
+    margin-top:30px;
+}
+
+h2
+{
+    margin-top:0px;   
+}
+
+td
+{
+    padding-bottom:9px;
+}
+
+body
+{
+    background-color:rgba(230, 220, 200, 0.4);
+    
+}
+
+header
+{
+    width:100%;
+    height: 250px;
+    background-color:rgba(204, 204, 204, 1.0);
+    
+}
+
+header h1 {
+    margin: 0;
+    padding: 10px 0 0 10px;
+}
+
+#header a {
+    color: #666;
+}
+
+#header a:hover, #header a:focus {
+    color: Black;
+}
+
+#interests li {
+    list-style-position: inside;
+}
+
+nav 
+{
+    width: 150px;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 10px; 
+    margin-top: 0px;
+    
+}
+
+nav ul {
+    padding-left: 0;
+    margin-top: 30px;
+   
+}
+
+nav li
+{
+    list-style: none;
+    font-size: 1.5em;
+    padding:10px;  
+    border-bottom: 2px solid #666;
+    
+}
+
+nav li:hover {
+    background-color: rgba(250, 250, 250, 0.8);
+}
+
+article
+{
+    width:79%;
+    float:left;
+    margin:30px 20px 20px 15px;
+    padding:0 25px;
+    background-image: linear-gradient(to left, #eee, white);
+    box-shadow: 10px 10px 5px #888888;
+    border: 1px solid #666666;
+/*
+    -moz-column-count: 2;
+    -moz-column-rule-color: #666;
+    -moz-column-rule-style: solid;
+    -moz-colum-gap: 1.5em;
+    -webkit-column-count: 2;
+    -webkit-column-rule-color: #666;
+    -webkit-column-rule-style: solid;
+    -webkit-colum-gap: 1.5em;
+    column-count: 1;
+    column-rule-color: #666;
+    column-rule-style: solid;
+    colum-gap: 1.5em;
+*/
+
+}
+
+article h2 {
+    margin-top: 10px;
+}
+aside
+{
+    display:none;
+    width:28%;
+    float:left;
+    margin:0;
+    padding:0;
+    margin-left:10px;
+    margin-top:30px;
+    background-color: rgba(204, 204, 204, 0.2);
+    box-shadow: 10px 10px 5px #888888;
+    text-align: center;
+    
+}
+
+#alt-contact {
+    float: right;
+    width: 290px;
+    margin: 15px 0 10px 20px;
+    padding: 10px;
+    box-shadow: none;
+    background-color: rgba(204, 204, 204, 0.4);
+    display:block;
+    }
+
+.container {
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    
+    
+}
+
+.clearfix:after {
+    content:".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.content {
+    width: 950px;
+    background-image: linear-gradient(to right, #ccc, white);
+}
+
+.aside-image
+{
+    width:80%;
+    display:block;
+    margin: 15px auto 20px auto;
+}
+
+.header-image
+{
+    width:100%;
+
+}
+
+#resume 
+{
+/*    width:700px;*/
+}
+
+aside address, aside h2 {
+    margin: 0 10px 20px 10px;
+}
+
+footer 
+{
+    padding: 1px 0;
+    
+    margin-top: -20px;
+    width:100%;
+    clear: both;
+    background-color:rgba(204, 204, 204, 1.0);
+    text-align: center;
+}
+
+#submitted {
+    height:430px;
+}
+
+@media screen and (max-width: 940px) {
+   html * {
+        margin:0;
+        padding:0;
+    }
+    .container  {
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+    article {
+        column-count: initial;
+        -webkit-column-count: initial;
+        -moz-column-count: initial;
+        width: 95%;
+        margin: 25px;
+        padding: 10px 20px;
+    }
+    
+    aside {
+        clear:both;
+        width: 100%;
+        display:block;
+        margin-bottom: 10px;
+    }
+    nav  {
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+        height: auto;
+    }
+    nav li {
+        width: 15.6%;
+        font-size: 2.5vw;
+        margin: 0;
+        padding: 0;
+        margin-left: 1%;
+        float: left;
+        border-left: 2px solid #666;
+        border-bottom: none;
+        text-align: center;
+    }
+    nav li:first-child {
+        border: none;
+    }
+    nav ul {
+        margin:0;
+    }
+    header {
+        width: 100%;
+        margin: 0;
+        padding-bottom: 15px;
+        height: auto;
+        font-size: 2.34vw;
+    }
+    
+    header a {
+    margin-left: 15px
+    }
+    
+    #alt-contact {
+        display:none;
+    }
+    footer {
+        height: 40px;
+        padding-top: 10px;
+    }
+    
+    #submitted {
+    height:130px;
+    }
+}
+
+
+
+@media screen and (max-width: 550px) {
+    * {
+        margin:0;
+        padding:0;
+        
+    }
+    .container  {
+        width: 100%;
+    }
+    .content {
+        width: 95%;
+        margin: 0 auto;  
+        background-image: linear-gradient(to top, #ccc, white);
+    }
+    article {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        box-shadow: none;
+        background-color: rgba(204, 204, 204, 0.4);
+    }
+    
+    aside {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        box-shadow: none;
+        background-color: rgba(204, 204, 204, 0.4);
+        display:block;
+    }
+    
+    #alt-contact {
+        display:none;
+    }
+    
+    nav  {
+        width: 95%;
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+        height: 103px;
+        border: solid 2px #666;
+        background-color:lightgray
+    }
+    nav li {
+        width: 47%;
+        font-size: 1.2em;
+        margin: 0 5px;
+        padding: 5px 0 ;
+        float: left;
+        text-align: center;
+        border: none;
+    }
+    
+    nav li:nth-child(even) {
+        border-left: solid 2px #666;
+    }
+
+    header {
+        width: 95%;
+        margin: 0 auto;
+        height: auto;
+        font-size: inherit;
+    }
+    header h1 {
+        padding:5px;
+        text-align: center;
+    }
+    footer {
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    #submitted {
+    height:130px;
+    }
+}
+
