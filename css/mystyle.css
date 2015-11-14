@@ -82,6 +82,10 @@ table
     font-style:italic;
 }
 
+#resume-image {
+    width: 25px;
+}
+
 hr
 {
     width:80%;

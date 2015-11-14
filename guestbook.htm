@@ -54,40 +54,41 @@
                 </div>    
                 <h2>Guestbook</h2>
                 <p>Thanks for taking the time to drop by for a visit.  Please fill in the guestbook information below.</p>
-                <form action="submitted.htm"  enctype="text/plain">
+                <form id="guest-form" action=""  enctype="text/plain">
                 <label>First Name:</label>
-                <input type="text" name="firstname"/>
+                <input id="firstname" type="text" name="firstname"/>
                 <br/>
                 <label>Last Name:</label>
-                <input type="text" name="lastname"/>
+                <input id="lastname" type="text" name="lastname"/>
                 <br/>
                 <label>Email:</label>
-                <input type="text" name="Email"/>
+                <input id="email" type="email" name="email"/>
                 <br/>
                 <label>Website:</label>
                 <br/>
-                <input type="text" name="Website" value="http://"/>
+                <input id="website" type="url" name="website"/>
                 <br/>
                 <label>Country:</label>
-                <input type="text" name="Country"/>
+                <input id="country" type="text" name="country"/>
                 <br/>
                 <label>How did you find my site?</label>
                 <br/>
-                <select name="how_did_you_find">
-                    <option>I'm a friend</option>
-                    <option>A friend recommended your site</option>
-                    <option>A search engine directed me to your site</option>
-                    <option>I stumbled upon it accidentally</option>
-                    <option>Other</option>
+                <select id="howFind" name="how_did_you_find">
+                    <option value="0"></option>
+                    <option value="1">I'm a friend</option>
+                    <option value="1">A friend recommended your site</option>
+                    <option value="1">A search engine directed me to your site</option>
+                    <option value="1">I stumbled upon it accidentally</option>
+                    <option value="1">Other</option>
                 </select>
                 <br/>
                 <label>Comments?</label>
                 <br/>
-                <textarea cols="25" rows="5" name="comments">Please enter comments here:</textarea>
+                <textarea id="comments" cols="25" rows="5" name="comments"></textarea>
                 <br/>
                 Thanks for your time.
                 <br/>
-                <input type="submit" name="submit"/>
+                <input type="submit" name="submit" value="Submit" onclick="validateForm(this.form);"/>
                 <input type="reset" name="reset"/>
                 </form>
 
