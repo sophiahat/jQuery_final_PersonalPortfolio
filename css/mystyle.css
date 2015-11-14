@@ -162,7 +162,33 @@ nav li
     list-style: none;
     font-size: 1.5em;
     padding:10px;  
-    border-bottom: 2px solid #666;
+/*    border-bottom: 2px solid #666;*/
+    position:relative;
+    
+}
+
+nav ul.subnav {
+    font-size: .5em;
+    background: #a6a6a6;
+    width: 200px;
+    clear:both;
+    display: none;
+    position: absolute;
+    left: 150px;
+    top: -30px;
+    -moz-border-top-right-radius: 10px;
+    -moz-border-bottom-right-radius: 10px;
+    -moz-border-bottom-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+nav li ul.subnav {
+    border-bottom: solid 8px black;
     
 }
 
@@ -179,20 +205,6 @@ article
     background-image: linear-gradient(to left, #eee, white);
     box-shadow: 10px 10px 5px #888888;
     border: 1px solid #666666;
-/*
-    -moz-column-count: 2;
-    -moz-column-rule-color: #666;
-    -moz-column-rule-style: solid;
-    -moz-colum-gap: 1.5em;
-    -webkit-column-count: 2;
-    -webkit-column-rule-color: #666;
-    -webkit-column-rule-style: solid;
-    -webkit-colum-gap: 1.5em;
-    column-count: 1;
-    column-rule-color: #666;
-    column-rule-style: solid;
-    colum-gap: 1.5em;
-*/
 
 }
 
@@ -320,7 +332,7 @@ footer
         width: 15.6%;
         font-size: 2.5vw;
         margin: 0;
-        padding: 0;
+        padding: 0 0 10px 0;
         margin-left: 1%;
         float: left;
         border-left: 2px solid #666;
@@ -333,6 +345,38 @@ footer
     nav ul {
         margin:0;
     }
+    
+    nav ul.subnav {
+        background: #a6a6a6;
+        width: 100%;
+        clear:both;
+/*        display: none;*/
+        position: absolute;
+        left: 5px;
+        top: 30px;
+        -moz-border-top-right-radius: 10px;
+        -moz-border-bottom-right-radius: 10px;
+        -moz-border-bottom-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-radius: 10px;
+        -webkit-border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+    nav li ul.subnav li {
+        float:none;
+        width: 100%;
+        font-size: 1.5em;
+        border: none;
+    }
+    
+    nav li ul.subnav {
+        border-bottom: solid 5px black;
+
+    }
+    
     header {
         width: 100%;
         margin: 0;
@@ -402,22 +446,69 @@ footer
         float: none;
         margin: 0 auto;
         padding: 0;
-        height: 103px;
+        height: 215px;
         border: solid 2px #666;
         background-color:lightgray
     }
     nav li {
-        width: 47%;
+        width: 25%;
         font-size: 1.2em;
         margin: 0 5px;
         padding: 5px 0 ;
-        float: left;
-        text-align: center;
+        float: none;
+        text-align: left;
         border: none;
+        display:block;
     }
     
+/*
     nav li:nth-child(even) {
         border-left: solid 2px #666;
+    }
+*/
+    
+    nav li a {
+        width: 50%;
+    }
+    
+    nav ul.subnav {
+        background: #a6a6a6;
+        width: 150px;
+/*        clear:both;*/
+/*        display: none;*/
+        position: absolute;
+        left: 100px;
+        top: 0px;
+        -moz-border-top-right-radius: 10px;
+        -moz-border-bottom-right-radius: 10px;
+        -moz-border-bottom-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-radius: 10px;
+        -webkit-border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+    nav li ul.subnav li {
+        float:none;
+        width: 95%;
+        font-size: 2em;
+        border: none;
+        -moz-border-top-right-radius: 10px;
+        -moz-border-bottom-right-radius: 10px;
+        -moz-border-bottom-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-radius: 10px;
+        -webkit-border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+    nav li ul.subnav {
+        border-bottom: solid 5px black;
+
     }
 
     header {

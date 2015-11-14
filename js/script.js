@@ -12,5 +12,14 @@ $('document').ready(function() {
        heightStyle: "content"
     });
     
-    
+    $('nav li').hover(function() {
+        $(this).find('.subnav').slideDown(1000);
+        $(this).find('a').addClass('active');
+        $(this).stop(true,true);
+    }, function() {
+        $(this).find('.subnav').slideUp(1000);
+        $(this).find('a').removeClass('active');
+        $(this).stop(true,true);
+    });
+        
 });
