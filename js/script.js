@@ -81,5 +81,15 @@ $(document).ready(function() {
         $(this).find('a').removeClass('active');
         $(this).stop(true,true);
     });
+     $('.fancybox').fancybox({
+        afterLoad: function() {
+            this.title = '<a href="images/CSpencer_Resume.pdf" target="_blank"><strong>Download Resume</strong></a>' 
+        },
+         helpers: {
+            title: {
+                type: 'inside'
+            }
+         }
+     });
         
 });

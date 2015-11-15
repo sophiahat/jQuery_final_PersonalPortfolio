@@ -41,7 +41,8 @@ h1, h2, h3
 }
 
 p {
-    margin:10px;
+    margin:10px 0;
+    color:#0E0F0E;
 }
 
 address p
@@ -82,8 +83,16 @@ table
     font-style:italic;
 }
 
+#resume-download {
+    width: 250px;
+    border: 3px solid black;
+/*    display: block;*/
+    clear: both;
+    margin: 25px auto;
+    text-align: center;
+}
 #resume-image {
-    width: 25px;
+    width: 100%;
 }
 
 hr
@@ -91,11 +100,6 @@ hr
     width:80%;
     background-color:rgba(204, 204, 204, .4);
     height: 4px;
-}
-
-p
-{
-    color:#0E0F0E;
 }
 
 h1
@@ -110,7 +114,8 @@ h2
 
 td
 {
-    padding-bottom:9px;
+    padding:0 5px 9px 5px;
+    
 }
 
 body
@@ -308,9 +313,23 @@ footer
     }
     .content {
         width: 100%;
-        margin: 0 auto;
-        
+        margin: 0 auto; 
     }
+    
+    .video {
+        width: 400px;
+        margin: 0 auto;
+    }
+    
+    .video video {
+        width: 100%;
+    }
+    td
+{
+    padding:0 8px 9px 8px;
+    
+}
+    
     article {
         column-count: initial;
         -webkit-column-count: initial;
@@ -393,6 +412,10 @@ footer
     margin-left: 15px
     }
     
+    p {
+        margin: 20px;
+    }
+    
     #alt-contact {
         display:none;
     }
@@ -441,8 +464,18 @@ footer
         display:block;
     }
     
+    td {
+        font-size:85%;
+        padding:0 5px 9px 5px;       
+    }
+    
     #alt-contact {
         display:none;
+    }
+    
+    .video {
+        width: 90%;
+        margin: 0 auto;
     }
     
     nav  {
@@ -464,12 +497,6 @@ footer
         border: none;
         display:block;
     }
-    
-/*
-    nav li:nth-child(even) {
-        border-left: solid 2px #666;
-    }
-*/
     
     nav li a {
         width: 50%;
@@ -512,7 +539,6 @@ footer
     
     nav li ul.subnav {
         border-bottom: solid 5px black;
-
     }
 
     header {
@@ -528,6 +554,7 @@ footer
     footer {
         width: 95%;
         margin: 0 auto;
+        height: 70px;
     }
     
     #submitted {
